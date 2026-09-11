@@ -1,0 +1,648 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>MasterSilviya Studio — Hair Colour &amp; Styling, Sherman Oaks CA</title>
+<meta name="description" content="Soft, lived-in colour and bridal styling by Silviya in Sherman Oaks, CA. Licensed hairstylist, one guest at a time.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Alex+Brush&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://use.typekit.net/rih8jwx.css">
+<!-- Structured data: tells Google directly what this business is, where it is,
+     and what it answers — the sanctioned way to help search relevance (unlike
+     hidden text, which Google penalizes). Kept factual: only real services and
+     the actual FAQ copy already on the page. -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "HairSalon",
+      "@id": "https://mastersilviya.com/#business",
+      "name": "MasterSilviya Studio",
+      "alternateName": "MasterSilviya",
+      "image": "https://mastersilviya.com/hero.jpg",
+      "url": "https://mastersilviya.com/",
+      "telephone": "+18182107688",
+      "priceRange": "$$",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "15125 Ventura Blvd, Ste 8",
+        "addressLocality": "Sherman Oaks",
+        "addressRegion": "CA",
+        "postalCode": "91403",
+        "addressCountry": "US"
+      },
+      "sameAs": ["https://www.instagram.com/mastersilviya_studio"],
+      "openingHoursSpecification": [
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": ["Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"],
+          "opens": "09:00",
+          "closes": "16:00"
+        }
+      ],
+      "hasOfferCatalog": {
+        "@type": "OfferCatalog",
+        "name": "Salon Services",
+        "itemListElement": [
+          { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Women's Haircut" } },
+          { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Blow-dry Style" } },
+          { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Colour & Root Touch-Up" } },
+          { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Balayage & Highlights" } },
+          { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Kérastase Treatment" } },
+          { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "K-tip Extensions" } },
+          { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Bridal Hair & Makeup" } }
+        ]
+      }
+    },
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "What is the best way to book?",
+          "acceptedAnswer": { "@type": "Answer", "text": "Tap any Book button on this page to open the online scheduler. Choose a service and a time, and you get an instant confirmation with the studio address." }
+        },
+        {
+          "@type": "Question",
+          "name": "Where can I park?",
+          "acceptedAnswer": { "@type": "Answer", "text": "There is free parking in the shared lot right at the plaza on Ventura Blvd. If it is full, metered street parking is available close by." }
+        },
+        {
+          "@type": "Question",
+          "name": "What if I need to reschedule?",
+          "acceptedAnswer": { "@type": "Answer", "text": "Life happens. Give at least 24 hours notice and there is no charge. Same-day cancellations may carry a small fee." }
+        }
+      ]
+    }
+  ]
+}
+</script>
+<style>
+  *{box-sizing:border-box}
+  html{scroll-behavior:smooth}
+  html,body{overflow-x:hidden}
+  body{margin:0;background:#fdf6f1;color:#3f2a24;font-family:'Poppins',system-ui,sans-serif;-webkit-font-smoothing:antialiased;text-wrap:pretty}
+  a{color:#3f2a24;text-decoration:none}
+  a:hover{color:#c1694c}
+  @keyframes fadeIn{from{opacity:0}to{opacity:1}}
+  @keyframes popIn{from{opacity:0;transform:translateY(16px) scale(.97)}to{opacity:1;transform:none}}
+  @keyframes heroZoom{0%{transform:scale(1)}100%{transform:scale(1.04)}}
+  @keyframes countPulse{0%{opacity:0;transform:translateY(6px)}100%{opacity:1;transform:none}}
+  .zoomable{overflow:hidden}
+  .zoomable img{transition:transform 1.1s cubic-bezier(.2,.8,.2,1)}
+  .zoomable:hover img{transform:scale(1.06)}
+  @keyframes windSweep{0%{transform:translateX(-120%) skewX(-12deg)}100%{transform:translateX(220%) skewX(-12deg)}}
+  @keyframes windLift{0%{transform:translateY(0) rotate(0)}35%{transform:translateY(-4px) rotate(-.4deg)}70%{transform:translateY(-2px) rotate(.3deg)}100%{transform:translateY(-3px) rotate(0)}}
+  .windBtn{position:relative;overflow:hidden;isolation:isolate;transition:background .5s ease,color .5s ease,letter-spacing .6s cubic-bezier(.2,.8,.25,1),box-shadow .5s ease}
+  .windBtn>span{position:relative;z-index:2}
+  .windBtn::before{content:'';position:absolute;top:-20%;left:0;width:45%;height:140%;z-index:1;pointer-events:none;background:linear-gradient(100deg,transparent,rgba(255,253,249,.7),transparent);opacity:0}
+  .windBtn:hover{animation:windLift .9s cubic-bezier(.2,.8,.25,1) forwards;letter-spacing:.15em;box-shadow:0 16px 40px rgba(193,105,76,.32)}
+  .windBtn:hover::before{opacity:1;animation:windSweep 1.15s cubic-bezier(.35,.1,.2,1) infinite}
+  .windBtn.dark:hover{background:var(--accent);color:#fffdf9}
+  .windBtn.light:hover{background:#eec9a8}
+  @keyframes marquee{from{transform:translateX(0)}to{transform:translateX(-50%)}}
+  .ph{position:relative;overflow:hidden;background:repeating-linear-gradient(45deg,#e8e4da,#e8e4da 13px,#e1dcd0 13px,#e1dcd0 26px)}
+  .ph b{position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);font:400 10px/1.6 ui-monospace,Menlo,monospace;letter-spacing:.1em;color:rgba(63,42,36,.45);text-transform:uppercase;text-align:center;white-space:nowrap}
+  .u{position:relative}
+  .u::after{content:'';position:absolute;left:0;bottom:-3px;width:0;height:1px;background:currentColor;transition:width .35s ease}
+  .u:hover::after{width:100%}
+  :where(#top,#about,#services,#work,#faq,#visit){scroll-margin-top:84px}
+  .nav-toggle{display:none;align-items:center;justify-content:center;width:40px;height:40px;margin-left:auto;border:none;background:transparent;cursor:pointer;color:var(--ink);padding:0}
+  /* Full-screen mobile menu (was a small dropdown under the header — now a
+     proper full-screen panel like oaselle's, so it reads as a real "app"
+     menu rather than a squeezed strip). Sits under the fixed header
+     (z-index 60 keeps the header + its close/X button on top and clickable),
+     locks its own scroll, and centers big, easy-to-tap links. */
+  .mobile-menu{display:none;position:fixed;top:var(--headerH,82px);left:0;right:0;bottom:0;z-index:55;background:var(--paper);flex-direction:column;justify-content:center;align-items:stretch;gap:6px;overflow-y:auto}
+  :root,#app{--headerH:82px}
+  @media (max-width:760px){
+    .nav-links,.nav-book{display:none !important}
+    .nav-toggle{display:inline-flex;margin-left:auto}
+    #siteHeader nav{padding-top:18px !important;padding-bottom:18px !important}
+    #siteHeader .brand span:first-child{font-size:28px !important}
+    :root,#app{--headerH:92px}
+  }
+  @media (min-width:761px){
+    .mobile-menu{display:none !important}
+  }
+  @media (hover:none){
+    .scroll-arrows{display:none !important}
+  }
+  [data-reveal]{transition:opacity .9s cubic-bezier(.2,.8,.25,1), transform .9s cubic-bezier(.2,.8,.25,1), filter .9s ease}
+  .icon-x,.icon-menu{display:none}
+  .nav-open .icon-x{display:block}
+  .nav-open .icon-menu{display:none}
+  .icon-menu{display:block}
+
+  /* Hero banner: 3-step responsive scale (desktop / tablet / phone).
+     Each step gets a shorter min-height AND a darker, more vertical scrim —
+     the narrower the screen, the more the text needs its own dark "shelf"
+     instead of relying on the horizontal fade over the model's face. */
+  #top{min-height:clamp(440px,52vh,620px)}
+  #heroImg{object-position:94% 22%}
+  /* Round 7 correction: she compared this straight against oaselle's hero,
+     which shows the model's face with no blur or darkening at all — ours had
+     drifted "grey". Dropped back to a plain horizontal fade that's fully
+     transparent over her face and only does its job on the text side. No
+     filter on the image itself anymore — full colour, full clarity. */
+  #heroOverlay{background:linear-gradient(90deg,rgba(10,8,7,.82) 0%,rgba(10,8,7,.5) 28%,rgba(10,8,7,.14) 52%,rgba(10,8,7,0) 72%)}
+
+  /* Tablet / narrow laptop: image crop gets tighter, text column starts to
+     compete with the face more, so height comes down a step and a light
+     vertical component is introduced under the copy — still fading to fully
+     clear well before it reaches her face. */
+  @media (max-width:1024px){
+    #top{min-height:clamp(420px,60vh,600px)}
+    #heroOverlay{background:linear-gradient(180deg,rgba(10,8,7,.04) 0%,rgba(10,8,7,.1) 60%,rgba(10,8,7,.2) 100%),linear-gradient(90deg,rgba(10,8,7,.84) 0%,rgba(10,8,7,.56) 36%,rgba(10,8,7,.2) 62%,rgba(10,8,7,0) 82%)}
+    /* Narrower frame means much more of the tall photo gets cropped in by
+       cover — pull the focal point back so her face doesn't land directly
+       under the headline. */
+    #heroImg{object-position:80% 16%}
+  }
+
+  /* Phone: shortest banner, image stays at its own native crop (no upscaling
+     blur). The vertical scrim here is doing real work (text sits full-width
+     over the photo on phone, unlike the side-by-side split on desktop) so it
+     stays, but pulled back a lot lighter than before. */
+  @media (max-width:680px){
+    #top{min-height:clamp(380px,54vh,480px)}
+    #heroOverlay{background:linear-gradient(180deg,rgba(10,8,7,.24) 0%,rgba(10,8,7,.46) 45%,rgba(10,8,7,.64) 100%),linear-gradient(90deg,rgba(10,8,7,.66) 0%,rgba(10,8,7,.38) 55%,rgba(10,8,7,.14) 100%)}
+    #heroImg{object-position:68% 14%}
+    /* Less reading on a small screen: the eyebrow, headline and one button
+       already say everything a phone visitor needs — the "next opening"
+       line is a nice-to-have that just adds clutter here. */
+    #heroSub{font-size:15px;margin-top:16px}
+    #heroNext{display:none !important}
+    /* The bio section's bottom air and the work section's top air used to
+       stack into one big empty band before the Instagram row — barely
+       noticeable in a browser, very obvious on a tall phone screen. Tighten
+       both sides on mobile so the transition reads as one continuous page. */
+    #about{padding-top:56px;padding-bottom:36px}
+    #work{padding-top:28px}
+  }
+
+  /* Small phones (SE / mini): the shortest viewports need one more notch of
+     compression, otherwise the header overlaps the headline. */
+  @media (max-width:380px){
+    #top{min-height:clamp(360px,52vh,440px)}
+    #heroOverlay{background:linear-gradient(180deg,rgba(10,8,7,.32) 0%,rgba(10,8,7,.52) 45%,rgba(10,8,7,.7) 100%),linear-gradient(90deg,rgba(10,8,7,.7) 0%,rgba(10,8,7,.44) 55%,rgba(10,8,7,.18) 100%)}
+    #heroImg{object-position:62% 12%}
+  }
+</style>
+</head>
+<body>
+
+<div id="app" style="--ink:#3f2a24;--paper:#fdf6f1;--sand:#f2e1d6;--accent:#c1694c;--deep:#7a3423;background:var(--paper)">
+
+  <!-- ============ NAV ============ -->
+  <header id="siteHeader" style="position:fixed;top:0;left:0;right:0;z-index:60;background:rgba(244,242,237,.92);backdrop-filter:blur(14px);border-bottom:1px solid rgba(63,42,36,.09)">
+    <nav style="display:flex;align-items:center;gap:24px;padding:16px clamp(20px,3vw,40px) 16px clamp(18px,2vw,28px)">
+      <a href="#top" class="brand" style="display:flex;flex-direction:column;align-items:flex-end;gap:3px;line-height:1">
+        <span style="font-family:'linotype-didot',serif;font-size:29px;letter-spacing:.03em;text-transform:uppercase;color:var(--ink)">MasterSilviya</span>
+        <span style="font-family:'Poppins',sans-serif;font-weight:400;font-size:10px;letter-spacing:.28em;text-transform:uppercase;color:rgba(63,42,36,.42)">Studio</span>
+      </a>
+      <div class="nav-links" style="margin-left:auto;display:flex;gap:8px;font-weight:500;font-size:14.5px;letter-spacing:.02em;color:rgba(63,42,36,.7)">
+        <a class="u" href="services.html" style="padding:10px 14px">Services</a>
+        <a class="u nav-link" data-section="work" href="#work" style="padding:10px 14px">Work</a>
+        <a class="u nav-link" data-section="about" href="#about" style="padding:10px 14px">About</a>
+        <a class="u nav-link" data-section="visit" href="#visit" style="padding:10px 14px">Visit</a>
+      </div>
+      <button id="navToggle" class="nav-toggle" aria-label="Menu">
+        <svg class="icon-x" width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg"><line x1="4" y1="4" x2="18" y2="18" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"></line><line x1="18" y1="4" x2="4" y2="18" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"></line></svg>
+        <svg class="icon-menu" width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg"><line x1="3" y1="6" x2="19" y2="6" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"></line><line x1="3" y1="11" x2="19" y2="11" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"></line><line x1="3" y1="16" x2="19" y2="16" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"></line></svg>
+      </button>
+    </nav>
+  </header>
+  <!-- Deliberately OUTSIDE #siteHeader: the header's backdrop-filter creates a
+       new containing block for fixed-position descendants, which was
+       squashing this panel to the header's own (content-sized) height
+       instead of letting it reach the bottom of the viewport. -->
+  <div id="mobileMenu" class="mobile-menu" style="padding:6vh clamp(28px,8vw,48px) 6vh">
+    <a class="u mobile-link" href="services.html" style="padding:15px 2px;font-weight:400;font-size:25px">Services</a>
+    <a class="u nav-link mobile-link" data-section="work" href="#work" style="padding:15px 2px;font-weight:400;font-size:25px">Work</a>
+    <a class="u nav-link mobile-link" data-section="about" href="#about" style="padding:15px 2px;font-weight:400;font-size:25px">About</a>
+    <a class="u nav-link mobile-link" data-section="visit" href="#visit" style="padding:15px 2px;font-weight:400;font-size:25px">Visit</a>
+  </div>
+  <div aria-hidden="true" style="height:var(--headerH,82px)"></div>
+
+  <!-- ============ HERO ============ -->
+  <section id="top" style="position:relative;display:flex;align-items:center;background:#0c0a09;overflow:hidden">
+    <img id="heroImg" src="hero.jpg" alt="" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;z-index:0;animation:heroZoom 24s ease-in-out infinite alternate">
+    <div id="heroOverlay" style="position:absolute;inset:0;z-index:1"></div>
+    <div style="position:relative;z-index:2;width:100%;max-width:620px;padding:clamp(48px,9vw,96px) clamp(24px,3vw,44px) clamp(36px,6.5vw,68px)">
+      <span style="display:block;font-weight:500;font-size:11.5px;letter-spacing:.22em;text-transform:uppercase;color:#e6b393">Located in Sherman Oaks, CA</span>
+      <h1 style="font-family:'linotype-didot',serif;font-weight:400;font-size:clamp(38px,4.6vw,76px);line-height:1;letter-spacing:-.02em;margin:20px 0 0;color:#fffdf9">Hair that looks like <span style="font-family:'Alex Brush',cursive;font-weight:400;color:#eec9a8;font-size:1.3em">you</span>, only lighter.</h1>
+      <p id="heroSub" style="font-weight:300;font-size:16.5px;line-height:1.7;color:rgba(255,252,247,.82);margin:22px 0 0;max-width:440px">Soft, lived-in colour — one guest at a time, no rush, no noise.</p>
+      <a href="https://book.squareup.com/appointments/ffppp3qn5zbpjs/location/LCDY8K92TGENF/services" target="_blank" rel="noopener" class="windBtn light" style="display:inline-block;margin-top:32px;font-weight:600;font-size:14px;letter-spacing:.08em;text-transform:uppercase;background:var(--accent);color:#fffdf9;padding:19px 42px;border-radius:2px;box-shadow:0 14px 34px rgba(0,0,0,.28)"><span>Book your services</span></a>
+      <div id="heroNext" style="display:flex;align-items:center;gap:9px;margin-top:24px;font-weight:400;font-size:11.5px;letter-spacing:.14em;text-transform:uppercase;color:rgba(255,252,247,.66)"><span style="width:6px;height:6px;border-radius:50%;background:#e6b393;display:inline-block"></span>Next opening: Thursday afternoon</div>
+    </div>
+  </section>
+
+  <!-- ============ MARQUEE ============ -->
+  <!-- Moved directly under the hero on purpose: the first thing you see after
+       the banner should already be moving, not a wall of biography text. -->
+  <section style="border-bottom:1px solid rgba(63,42,36,.1);overflow:hidden;padding:18px 0;background:var(--paper)">
+    <div style="display:flex;width:max-content;animation:marquee 34s linear infinite;font-family:'linotype-didot',serif;font-size:clamp(18px,2.3vw,28px);color:rgba(63,42,36,.62);white-space:nowrap">
+      <span style="display:flex;gap:44px;padding-right:44px"><span>18+ Years Experience</span><span style="color:var(--accent)">✦</span><span>Licensed Hairstylist</span><span style="color:var(--accent)">✦</span><span>Private Studio, One Guest</span><span style="color:var(--accent)">✦</span><span>Bridal Specialist</span><span style="color:var(--accent)">✦</span></span>
+      <span style="display:flex;gap:44px;padding-right:44px"><span>18+ Years Experience</span><span style="color:var(--accent)">✦</span><span>Licensed Hairstylist</span><span style="color:var(--accent)">✦</span><span>Private Studio, One Guest</span><span style="color:var(--accent)">✦</span><span>Bridal Specialist</span><span style="color:var(--accent)">✦</span></span>
+    </div>
+  </section>
+
+  <!-- ============ ABOUT ============ -->
+  <section id="about" style="max-width:1280px;margin:0 auto;padding:92px 30px 64px">
+    <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:56px;align-items:center">
+      <div data-reveal="1">
+        <h2 style="font-family:'linotype-didot',serif;font-weight:400;font-size:clamp(38px,5.6vw,74px);line-height:.98;letter-spacing:-.02em;margin:0">Hi, I'm <span style="font-family:'Alex Brush',cursive;font-weight:400;color:var(--accent);font-size:1.3em">Silviya</span>.</h2>
+        <p style="font-weight:300;font-size:17px;line-height:1.78;color:rgba(63,42,36,.74);margin:26px 0 0;max-width:480px">18+ years behind the chair have taught me this: the best colour happens slowly — one person, one room, no one watching the clock.</p>
+        <p style="font-weight:300;font-size:17px;line-height:1.78;color:rgba(63,42,36,.74);margin:18px 0 0;max-width:480px">Every appointment starts with a proper consultation, and finishes with hair you can actually recreate at home.</p>
+        <div id="statRow" style="display:flex;gap:clamp(20px,6vw,44px);margin-top:38px">
+          <div style="flex:1 1 0;min-width:0"><div class="stat-num" data-count-to="18" data-suffix="+" style="font-family:'linotype-didot',serif;font-size:clamp(32px,7vw,44px);line-height:1;color:var(--accent)">0+</div><div style="font-weight:400;font-size:12px;letter-spacing:.12em;text-transform:uppercase;color:rgba(63,42,36,.55);margin-top:8px">Years behind the chair</div></div>
+          <div style="flex:1 1 0;min-width:0"><div style="font-family:'linotype-didot',serif;font-size:clamp(32px,7vw,44px);line-height:1;color:var(--accent)">1:1</div><div style="font-weight:400;font-size:12px;letter-spacing:.12em;text-transform:uppercase;color:rgba(63,42,36,.55);margin-top:8px">Private studio, one guest</div></div>
+        </div>
+      </div>
+      <div class="zoomable" data-reveal="1" style="position:relative;aspect-ratio:4/5;border-radius:3px;overflow:hidden"><img src="portrait.jpg" alt="Silviya" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;display:block"></div>
+    </div>
+  </section>
+
+  <!-- ============ WORK ============ -->
+  <section id="work" data-reveal="1" style="max-width:1280px;margin:0 auto;padding:48px 30px 0">
+    <div style="display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:20px;margin-bottom:30px">
+      <a class="u" href="https://www.instagram.com/mastersilviya_studio" target="_blank" rel="noopener" style="font-weight:500;font-size:13px;letter-spacing:.05em;text-transform:uppercase">@mastersilviya_studio</a>
+      <div class="scroll-arrows" style="display:flex;gap:8px">
+        <button id="workLeft" aria-label="Scroll left" style="width:34px;height:34px;border-radius:50%;border:1px solid rgba(63,42,36,.18);background:transparent;cursor:pointer;display:flex;align-items:center;justify-content:center;color:var(--ink)"><svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M9 2L4 7L9 12" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"></path></svg></button>
+        <button id="workRight" aria-label="Scroll right" style="width:34px;height:34px;border-radius:50%;border:1px solid rgba(63,42,36,.18);background:transparent;cursor:pointer;display:flex;align-items:center;justify-content:center;color:var(--ink)"><svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M5 2L10 7L5 12" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"></path></svg></button>
+      </div>
+    </div>
+    <div id="workScroll" class="work-scroll" style="cursor:grab;user-select:none;display:flex;gap:18px;overflow-x:auto;scroll-snap-type:x mandatory;-webkit-overflow-scrolling:touch;scrollbar-width:none;padding-bottom:6px;margin:0 calc(-1 * clamp(24px,3vw,40px));padding-left:clamp(24px,3vw,40px);padding-right:clamp(24px,3vw,40px)"></div>
+    <!-- To add real photos or clips: drop the files in this same folder, then in the WORK_GALLERY
+         array above set `img: 'work-1.jpg'` for a photo, or `video: 'work-2.mp4'` for a short clip
+         (clips play on hover on desktop, and auto-play as they scroll into view on phones). -->
+  </section>
+
+  <!-- ============ TESTIMONIALS ============ -->
+  <section style="background:var(--sand)">
+    <div style="max-width:1280px;margin:0 auto;padding:88px 30px">
+      <div style="text-align:center;margin-bottom:40px">
+        <div style="display:inline-flex;align-items:center;gap:8px;background:var(--paper);border:1px solid rgba(63,42,36,.16);border-radius:999px;padding:9px 20px 9px 14px">
+          <svg width="16" height="16" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" style="flex:none"><path fill="#4285F4" d="M23.52 12.27c0-.85-.08-1.67-.22-2.45H12v4.64h6.47c-.28 1.5-1.13 2.78-2.4 3.63v3.02h3.89c2.28-2.1 3.56-5.2 3.56-8.84z"></path><path fill="#34A853" d="M12 24c3.24 0 5.96-1.07 7.95-2.9l-3.89-3.02c-1.08.72-2.46 1.15-4.06 1.15-3.12 0-5.77-2.11-6.71-4.94H1.27v3.11C3.25 21.3 7.31 24 12 24z"></path><path fill="#FBBC05" d="M5.29 14.29A7.2 7.2 0 0 1 4.9 12c0-.8.14-1.57.39-2.29V6.6H1.27A11.98 11.98 0 0 0 0 12c0 1.93.46 3.76 1.27 5.4l4.02-3.11z"></path><path fill="#EA4335" d="M12 4.77c1.76 0 3.34.6 4.58 1.79l3.44-3.44C17.95 1.19 15.24 0 12 0 7.31 0 3.25 2.7 1.27 6.6l4.02 3.11C6.23 6.88 8.88 4.77 12 4.77z"></path></svg>
+          <span style="color:var(--accent);font-size:13px;letter-spacing:.16em">★★★★★</span>
+          <span style="font-weight:500;font-size:12.5px;letter-spacing:.05em;color:rgba(63,42,36,.7)">Google Reviews</span>
+        </div>
+        <h2 style="font-family:'linotype-didot',serif;font-weight:400;font-size:clamp(28px,3.6vw,40px);line-height:1;letter-spacing:-.01em;margin:18px 0 0">What guests say</h2>
+      </div>
+      <div id="testimonials" style="display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:18px"></div>
+      <div style="text-align:center;margin-top:32px">
+        <a class="u" href="https://www.google.com/maps/search/?api=1&query=MasterSilviya+Studio+Sherman+Oaks+CA" target="_blank" rel="noopener" style="font-weight:500;font-size:13px;letter-spacing:.05em;text-transform:uppercase">See all reviews on Google</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ FAQ ============ -->
+  <section id="faq" data-reveal="1" style="max-width:920px;margin:0 auto;padding:100px 30px 40px">
+    <h2 style="font-family:'linotype-didot',serif;font-weight:400;font-size:clamp(34px,5.4vw,68px);line-height:1;letter-spacing:-.02em;margin:0 0 26px">Before You Book</h2>
+    <div id="faqList"></div>
+  </section>
+
+  <!-- ============ VISIT ============ -->
+  <section id="visit" data-reveal="1" style="max-width:1280px;margin:0 auto;padding:72px 30px 0">
+    <div style="text-align:center;margin-bottom:36px">
+      <h2 style="font-family:'Alex Brush',cursive;font-weight:400;font-size:clamp(42px,6vw,72px);line-height:1;color:var(--deep);margin:0">Come say hello</h2>
+    </div>
+    <!-- Solid brand-colour panel + live map side by side, echoing the
+         "Contact & Directions" block she pointed to — a bold, high-contrast
+         info panel instead of quiet text on cream, so the address/hours/call
+         are unmissable rather than something you have to go looking for. -->
+    <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));border-radius:4px;overflow:hidden;box-shadow:0 24px 60px rgba(63,42,36,.16)">
+      <div style="background:var(--deep);color:#fdf6f1;padding:clamp(40px,5vw,64px) clamp(32px,4vw,52px);display:flex;flex-direction:column;align-items:center;text-align:center;justify-content:center;gap:6px">
+        <span style="font-family:'Alex Brush',cursive;font-weight:400;font-size:clamp(34px,4vw,46px);line-height:1;color:#fdf6f1">We're open</span>
+        <span style="font-weight:600;font-size:13px;letter-spacing:.18em;text-transform:uppercase;color:#eec9a8;margin-top:2px">MasterSilviya Studio</span>
+        <div style="width:36px;height:1px;background:rgba(253,246,241,.3);margin:20px 0"></div>
+        <div style="font-weight:400;font-size:11px;letter-spacing:.16em;text-transform:uppercase;color:rgba(253,246,241,.66)">Call / Text</div>
+        <a class="u" href="tel:+18182107688" style="font-weight:700;font-size:22px;color:#fdf6f9;margin-top:4px">(818) 210-7688</a>
+        <a href="https://book.squareup.com/appointments/ffppp3qn5zbpjs/location/LCDY8K92TGENF/services" target="_blank" rel="noopener" class="windBtn light" style="display:inline-block;margin-top:18px;font-weight:600;font-size:12.5px;letter-spacing:.08em;text-transform:uppercase;background:#eec9a8;color:var(--deep);padding:14px 30px;border-radius:2px"><span>Book online now</span></a>
+        <div style="width:36px;height:1px;background:rgba(253,246,241,.3);margin:22px 0"></div>
+        <a class="u" href="https://maps.google.com/?q=15125+Ventura+Blvd+Ste+8+Sherman+Oaks+CA+91403" target="_blank" rel="noopener" style="font-weight:400;font-size:15px;line-height:1.7;color:#fdf6f1">15125 Ventura Blvd, Ste 8<br>Sherman Oaks, CA 91403</a>
+        <div style="width:36px;height:1px;background:rgba(253,246,241,.3);margin:22px 0"></div>
+        <div style="font-weight:700;font-size:13px;letter-spacing:.14em;text-transform:uppercase;color:#eec9a8">Tue – Sat</div>
+        <div style="font-weight:400;font-size:15px;margin-top:4px">9am – 4pm</div>
+      </div>
+      <div style="position:relative;min-height:340px;background:var(--sand)">
+        <iframe src="https://www.google.com/maps?q=15125+Ventura+Blvd+Ste+8+Sherman+Oaks+CA+91403&amp;output=embed" title="MasterSilviya Studio on Google Maps" loading="lazy" referrerpolicy="no-referrer-when-downgrade" style="position:absolute;inset:0;width:100%;height:100%;border:0;filter:grayscale(.15) contrast(1.02)"></iframe>
+        <a href="https://maps.google.com/?q=15125+Ventura+Blvd+Ste+8+Sherman+Oaks+CA+91403" target="_blank" rel="noopener" style="position:absolute;left:12px;bottom:12px;background:var(--paper);color:var(--ink);font-weight:500;font-size:11px;letter-spacing:.1em;text-transform:uppercase;padding:10px 16px;border-radius:2px;box-shadow:0 8px 22px rgba(63,42,36,.22)">Open in Google Maps</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ FOOTER ============ -->
+  <!-- A framed panel (border + sand background), not a flush strip — echoes the
+       bordered-card language used for testimonials/FAQ/work above. The closing
+       booking call-to-action now lives in the third column here instead of a
+       separate hero-sized section, so the page ends on one clear ask. -->
+  <footer style="border-top:1px solid rgba(63,42,36,.14);background:var(--sand)">
+    <div style="max-width:1280px;margin:0 auto;padding:64px 30px 40px;display:flex;flex-wrap:wrap;gap:56px clamp(64px,10vw,140px)">
+      <div style="display:flex;flex-direction:column;gap:20px;min-width:230px">
+        <a href="#top" style="display:flex;flex-direction:column;align-items:flex-start;gap:3px;line-height:1">
+          <span style="font-family:'linotype-didot',serif;font-size:26px;letter-spacing:.02em;text-transform:uppercase;color:var(--ink)">MasterSilviya</span>
+          <span style="align-self:flex-end;font-family:'Poppins',sans-serif;font-weight:400;font-size:9px;letter-spacing:.26em;text-transform:uppercase;color:rgba(63,42,36,.42)">Studio</span>
+        </a>
+        <div style="display:flex;flex-direction:column;gap:9px">
+          <span style="font-weight:300;font-size:13.5px;line-height:1.7;color:rgba(63,42,36,.6)">15125 Ventura Blvd Ste 8<br>Sherman Oaks, CA 91403</span>
+          <a class="u" href="tel:+18182107688" style="font-weight:500;font-size:14px;color:var(--ink)">(818) 210-7688</a>
+        </div>
+        <a href="https://www.instagram.com/mastersilviya_studio" target="_blank" rel="noopener" aria-label="Instagram" style="display:inline-flex;align-items:center;justify-content:center;width:34px;height:34px;border-radius:50%;border:1px solid rgba(63,42,36,.2);color:var(--ink)">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><rect x="3" y="3" width="18" height="18" rx="5" stroke="currentColor" stroke-width="1.5"></rect><circle cx="12" cy="12" r="4" stroke="currentColor" stroke-width="1.5"></circle><circle cx="17.2" cy="6.8" r="1.1" fill="currentColor"></circle></svg>
+        </a>
+      </div>
+      <div style="display:flex;flex-direction:column;gap:15px">
+        <span style="font-weight:400;font-size:11px;letter-spacing:.18em;text-transform:uppercase;color:rgba(63,42,36,.5)">Explore</span>
+        <a class="u" href="services.html" style="font-weight:400;font-size:15px;color:rgba(63,42,36,.75)">Services</a>
+        <a class="u" href="#work" style="font-weight:400;font-size:15px;color:rgba(63,42,36,.75)">Work</a>
+        <a class="u" href="#about" style="font-weight:400;font-size:15px;color:rgba(63,42,36,.75)">About</a>
+        <a class="u" href="#visit" style="font-weight:400;font-size:15px;color:rgba(63,42,36,.75)">Visit</a>
+      </div>
+      <div style="display:flex;flex-direction:column;gap:16px;align-items:flex-start;min-width:230px">
+        <span style="font-weight:400;font-size:11px;letter-spacing:.18em;text-transform:uppercase;color:rgba(63,42,36,.5)">Ready?</span>
+        <h3 style="font-family:'linotype-didot',serif;font-weight:400;font-size:clamp(26px,3vw,34px);line-height:1.05;letter-spacing:-.01em;margin:0;color:var(--ink)">Let's book <span style="font-family:'Alex Brush',cursive;font-weight:400;color:var(--accent);font-size:1.25em">you</span> in.</h3>
+        <a href="https://book.squareup.com/appointments/ffppp3qn5zbpjs/location/LCDY8K92TGENF/services" target="_blank" rel="noopener" class="windBtn dark" style="display:inline-block;font-weight:600;font-size:12.5px;letter-spacing:.06em;text-transform:uppercase;background:var(--ink);color:var(--paper);padding:15px 28px;border-radius:2px"><span>Book an appointment</span></a>
+      </div>
+    </div>
+    <div style="border-top:1px solid rgba(63,42,36,.12)">
+      <div style="max-width:1280px;margin:0 auto;padding:18px 30px;display:flex;flex-direction:column;gap:6px">
+        <div style="font-weight:300;font-size:12px;color:rgba(63,42,36,.5)">© 2026 MasterSilviya Studio</div>
+        <div style="font-weight:300;font-size:11.5px;line-height:1.6;color:rgba(63,42,36,.4);max-width:760px">Haircuts, colour &amp; balayage, highlights, blowouts, Kérastase treatments, perms, K-tip extensions, bridal hair and makeup — serving Sherman Oaks, Studio City, Encino and the greater San Fernando Valley.</div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ============ WELCOME BOOKING MODAL ============ -->
+  <div id="welcomeModal" style="display:none;position:fixed;inset:0;z-index:100;background:rgba(20,15,12,.58);backdrop-filter:blur(4px);align-items:center;justify-content:center;padding:24px;animation:fadeIn .3s ease both">
+    <div id="welcomeCard" style="position:relative;background:#fffdfa;border-top:4px solid var(--accent);border-radius:3px;max-width:460px;width:100%;padding:54px 40px 42px;text-align:center;box-shadow:0 34px 90px rgba(20,15,12,.42);animation:popIn .38s cubic-bezier(.2,.8,.3,1) both">
+      <button id="modalClose" aria-label="Close" style="position:absolute;top:14px;right:16px;border:none;background:transparent;cursor:pointer;font-family:'Poppins',sans-serif;font-size:24px;font-weight:400;line-height:1;color:rgba(63,42,36,.5);padding:6px">×</button>
+      <span style="font-weight:700;font-size:11.5px;letter-spacing:.22em;text-transform:uppercase;color:var(--accent)">Sherman Oaks, CA</span>
+      <h3 style="font-family:'linotype-didot',serif;font-weight:400;font-size:42px;line-height:1.02;letter-spacing:-.02em;margin:16px 0 0;color:var(--ink)">Your best hair day <span style="font-style:italic;color:var(--accent)">starts here.</span></h3>
+      <p style="font-weight:500;font-size:16px;line-height:1.65;color:rgba(63,42,36,.85);margin:18px 0 28px">Tell me what you want and I'll build the colour around it. New guests welcome.</p>
+      <a href="https://book.squareup.com/appointments/ffppp3qn5zbpjs/location/LCDY8K92TGENF/services" target="_blank" rel="noopener" id="modalBookBtn" class="windBtn dark" style="display:block;font-weight:700;font-size:14.5px;letter-spacing:.07em;text-transform:uppercase;background:var(--accent);color:#fffdf9;padding:19px 20px;border-radius:2px;box-shadow:0 14px 30px rgba(193,105,76,.4)"><span>Book an appointment</span></a>
+      <a href="tel:+18182107688" class="u" style="display:block;margin-top:18px;font-weight:600;font-size:13.5px;letter-spacing:.03em;color:var(--ink)">Or call / text (818) 210-7688</a>
+    </div>
+  </div>
+
+  <!-- ============ BACK TO TOP ============ -->
+  <button id="backToTop" aria-label="Back to top" style="display:none;position:fixed;right:22px;bottom:22px;z-index:55;width:44px;height:44px;border-radius:50%;border:1px solid rgba(63,42,36,.14);background:var(--paper);box-shadow:0 10px 30px rgba(63,42,36,.18);align-items:center;justify-content:center;cursor:pointer;color:var(--ink)">
+    <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M9 14V3M9 3L4 8M9 3L14 8" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path></svg>
+  </button>
+
+</div>
+
+<script>
+(function(){
+  "use strict";
+
+  // ---------- DATA ----------
+  // To add a real photo: put the image file in this same folder and set `img` to its filename.
+  // Each item is either a photo ({ tag, img: 'work-1.jpg' }) or a short clip
+  // ({ tag, video: 'work-2.mp4' }). `tag` is only used as alt/aria text now —
+  // no caption is shown under the photos on the page itself.
+  // Kept to a tight, odd-numbered set on purpose: a curated 9 (not all 18 files)
+  // reads as "hand-picked / high-end" rather than a dumped photo-dump feed, and
+  // an odd count avoids the too-even, too-tidy grid look.
+  var WORK_GALLERY = [
+    { tag: 'Half-up curls', img: 'work-15.jpg', pos: '50% 16%' },
+    { tag: 'Copper, sleek', img: 'work-2.jpg' },
+    { tag: 'Colour application', video: 'work-clip2.mp4', poster: 'work-clip2-poster.jpg' },
+    { tag: 'Vivid copper', img: 'work-6.jpg' },
+    { tag: 'Bridal half-up', img: 'work-4.jpg' },
+    { tag: 'In the studio', img: 'work-16.jpg', pos: '50% 12%' },
+    { tag: 'Blowout in motion', video: 'work-clip4.mp4', poster: 'work-clip4-poster.jpg' },
+    { tag: 'Sleek updo', img: 'work-10.jpg' },
+    { tag: 'Sun-kissed balayage', img: 'work-17.jpg', pos: '50% 14%' },
+    { tag: 'Caramel waves', img: 'work-11.jpg' },
+    { tag: 'Bouncy blowout', img: 'work-18.jpg', pos: '50% 12%' },
+  ];
+
+  var ALL_TESTIMONIALS = [
+    { quote: '“Every time I get my hair colored by Silva, I feel like a queen. She truly has magic in her hands.”', name: 'Yelena Russakova', tag: 'Google review' },
+    { quote: '“I can’t recommend my hairstylist enough! Silva was absolutely incredible from start to finish and made the experience fun.”', name: 'Jessica Olsen', tag: 'Google review' },
+    { quote: '“Sylvia is a wonderful stylist with a wealth of experience, which I’ve felt in my hair! It’s a miracle.”', name: 'Lera', tag: 'Google review' },
+    { quote: '“MasterSilviya was an absolute pleasure to work with for my wedding day hair.”', name: 'Lilit Y.', tag: 'Google review' },
+    { quote: '“I’ve been coming to this salon for a while now and I’m really happy with it.”', name: 'Manutd', tag: 'Google review' },
+  ];
+
+  var FAQS = [
+    { q: 'What is the best way to book?', a: 'Tap any Book button on this page to open the online scheduler. Choose a service and a time, and you get an instant confirmation with the studio address.' },
+    { q: 'Where can I park?', a: 'There is free parking in the shared lot right at the plaza on Ventura Blvd. If it is full, metered street parking is available close by.' },
+    { q: 'What if I need to reschedule?', a: 'Life happens. Give at least 24 hours notice and there is no charge. Same-day cancellations may carry a small fee.' },
+  ];
+
+  function esc(s){ return String(s).replace(/[&<>]/g, function(c){ return {'&':'&amp;','<':'&lt;','>':'&gt;'}[c]; }); }
+
+
+  // ---------- RENDER: work gallery (photos + hover/auto-playing clips, no captions) ----------
+  var workHtml = '';
+  WORK_GALLERY.forEach(function(g){
+    workHtml += '<figure style="margin:0;flex:0 0 clamp(190px,26vw,280px);scroll-snap-align:start">';
+    if (g.video) {
+      workHtml += '<div class="work-video" style="position:relative;aspect-ratio:4/5;border-radius:3px;overflow:hidden;border:1px solid rgba(63,42,36,.14);background:#000">' +
+        '<video src="' + esc(g.video) + '"' + (g.poster ? ' poster="' + esc(g.poster) + '"' : '') + ' muted loop playsinline preload="metadata" aria-label="' + esc(g.tag) + '" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:50% 18%;display:block"></video></div>';
+    } else if (g.img) {
+      workHtml += '<div style="position:relative;aspect-ratio:4/5;border-radius:3px;overflow:hidden;border:1px solid rgba(63,42,36,.14)"><img src="' + esc(g.img) + '" alt="' + esc(g.tag) + '" style="width:100%;height:100%;object-fit:cover;object-position:' + (g.pos || '50% 18%') + ';display:block"></div>';
+    } else {
+      workHtml += '<div class="ph" style="position:relative;aspect-ratio:4/5;border-radius:3px"><b>Drop a photo</b></div>';
+    }
+    workHtml += '</figure>';
+  });
+  document.getElementById('workScroll').innerHTML = workHtml;
+
+  // ---------- Work gallery clips: hover-to-play on desktop, auto-play when in view on touch ----------
+  var isTouch = window.matchMedia && window.matchMedia('(hover:none)').matches;
+  Array.prototype.forEach.call(document.querySelectorAll('.work-video video'), function(vid){
+    if (isTouch) {
+      var vio = new IntersectionObserver(function(entries){
+        entries.forEach(function(e){
+          if (e.isIntersecting) { vid.play().catch(function(){}); }
+          else { vid.pause(); }
+        });
+      }, { threshold: 0.6 });
+      vio.observe(vid);
+    } else {
+      var wrap = vid.closest('.work-video');
+      wrap.addEventListener('mouseenter', function(){ vid.currentTime = 0; vid.play().catch(function(){}); });
+      wrap.addEventListener('mouseleave', function(){ vid.pause(); });
+    }
+  });
+
+  // ---------- RENDER: testimonials (random 3 of 5, per page load) ----------
+  function shuffle(arr){
+    var a = arr.slice();
+    for (var i = a.length - 1; i > 0; i--) {
+      var j = Math.floor(Math.random() * (i + 1));
+      var tmp = a[i]; a[i] = a[j]; a[j] = tmp;
+    }
+    return a;
+  }
+  var picked = shuffle(ALL_TESTIMONIALS).slice(0, 4);
+  var tHtml = '';
+  picked.forEach(function(t){
+    tHtml += '<div style="display:flex;flex-direction:column;background:var(--paper);border:1px solid rgba(63,42,36,.14);border-radius:6px;padding:24px 22px">';
+    tHtml += '<div style="display:flex;align-items:center;gap:8px;margin-bottom:14px">';
+    tHtml += '<svg width="16" height="16" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" style="flex:none"><path fill="#4285F4" d="M23.52 12.27c0-.85-.08-1.67-.22-2.45H12v4.64h6.47c-.28 1.5-1.13 2.78-2.4 3.63v3.02h3.89c2.28-2.1 3.56-5.2 3.56-8.84z"></path><path fill="#34A853" d="M12 24c3.24 0 5.96-1.07 7.95-2.9l-3.89-3.02c-1.08.72-2.46 1.15-4.06 1.15-3.12 0-5.77-2.11-6.71-4.94H1.27v3.11C3.25 21.3 7.31 24 12 24z"></path><path fill="#FBBC05" d="M5.29 14.29A7.2 7.2 0 0 1 4.9 12c0-.8.14-1.57.39-2.29V6.6H1.27A11.98 11.98 0 0 0 0 12c0 1.93.46 3.76 1.27 5.4l4.02-3.11z"></path><path fill="#EA4335" d="M12 4.77c1.76 0 3.34.6 4.58 1.79l3.44-3.44C17.95 1.19 15.24 0 12 0 7.31 0 3.25 2.7 1.27 6.6l4.02 3.11C6.23 6.88 8.88 4.77 12 4.77z"></path></svg>';
+    tHtml += '<span style="color:var(--accent);font-size:12.5px;letter-spacing:.24em">★★★★★</span>';
+    tHtml += '</div>';
+    tHtml += '<p style="font-family:\'linotype-didot\',serif;font-weight:400;font-size:clamp(17px,1.7vw,20px);line-height:1.4;margin:0;flex:1">' + t.quote + '</p>';
+    tHtml += '<div style="font-weight:500;font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:rgba(63,42,36,.55);margin-top:18px">' + esc(t.name) + '</div>';
+    tHtml += '</div>';
+  });
+  document.getElementById('testimonials').innerHTML = tHtml;
+
+  // ---------- RENDER: FAQ (accordion, bordered cards) ----------
+  var faqList = document.getElementById('faqList');
+  FAQS.forEach(function(f, i){
+    var row = document.createElement('div');
+    row.style.cssText = 'border:1px solid rgba(63,42,36,.16);border-radius:4px;margin-bottom:14px;overflow:hidden;transition:border-color .3s ease,box-shadow .3s ease';
+    row.innerHTML =
+      '<button class="faq-toggle" style="width:100%;border:none;background:transparent;cursor:pointer;text-align:left;display:flex;align-items:center;justify-content:space-between;gap:20px;padding:22px 24px;font-family:\'linotype-didot\',serif;font-size:clamp(19px,2.1vw,24px);color:var(--accent)">' +
+        '<span>' + esc(f.q) + '</span>' +
+        '<span class="faq-plus" style="flex:none;font-family:\'Poppins\',sans-serif;font-size:22px;font-weight:300;color:var(--accent);transform:rotate(0deg);transition:transform .3s ease;line-height:1">+</span>' +
+      '</button>' +
+      '<div class="faq-body" style="max-height:0px;overflow:hidden;transition:max-height .35s ease">' +
+        '<p style="font-weight:300;font-size:15.5px;line-height:1.75;color:rgba(63,42,36,.72);margin:0;padding:0 24px 24px">' + esc(f.a) + '</p>' +
+      '</div>';
+    faqList.appendChild(row);
+    var btn = row.querySelector('.faq-toggle');
+    var body = row.querySelector('.faq-body');
+    var plus = row.querySelector('.faq-plus');
+    var openFlag = false;
+    btn.addEventListener('click', function(){
+      openFlag = !openFlag;
+      body.style.maxHeight = openFlag ? '260px' : '0px';
+      plus.style.transform = openFlag ? 'rotate(45deg)' : 'rotate(0deg)';
+      row.style.borderColor = openFlag ? 'var(--accent)' : 'rgba(63,42,36,.16)';
+    });
+  });
+
+  // ---------- Nav: mobile toggle ----------
+  var navToggle = document.getElementById('navToggle');
+  var mobileMenu = document.getElementById('mobileMenu');
+  var appEl = document.getElementById('app');
+  function closeNav(){
+    appEl.classList.remove('nav-open');
+    mobileMenu.style.display = 'none';
+    document.body.style.overflow = '';
+  }
+  navToggle.addEventListener('click', function(){
+    var isOpen = appEl.classList.toggle('nav-open');
+    mobileMenu.style.display = isOpen ? 'flex' : 'none';
+    document.body.style.overflow = isOpen ? 'hidden' : '';
+  });
+  Array.prototype.forEach.call(document.querySelectorAll('.mobile-link'), function(el){
+    el.addEventListener('click', closeNav);
+  });
+
+  // ---------- Horizontal scroll: arrows + drag ----------
+  function wireScroller(scrollElId, leftBtnId, rightBtnId, amount){
+    var el = document.getElementById(scrollElId);
+    var leftBtn = document.getElementById(leftBtnId);
+    var rightBtn = document.getElementById(rightBtnId);
+    if (leftBtn) leftBtn.addEventListener('click', function(){ el.scrollBy({ left: -amount, behavior: 'smooth' }); });
+    if (rightBtn) rightBtn.addEventListener('click', function(){ el.scrollBy({ left: amount, behavior: 'smooth' }); });
+    var drag = null;
+    el.addEventListener('mousedown', function(e){ drag = { x: e.pageX, left: el.scrollLeft }; el.style.cursor = 'grabbing'; });
+    window.addEventListener('mousemove', function(e){
+      if (!drag) return;
+      e.preventDefault();
+      el.scrollLeft = drag.left - (e.pageX - drag.x);
+    });
+    window.addEventListener('mouseup', function(){ if (drag) el.style.cursor = 'grab'; drag = null; });
+  }
+  wireScroller('workScroll', 'workLeft', 'workRight', 280);
+
+  // ---------- Scroll spy + back-to-top ----------
+  var backToTop = document.getElementById('backToTop');
+  var navLinks = document.querySelectorAll('.nav-link');
+  var scheduled = false;
+  function onScroll(){
+    if (scheduled) return;
+    scheduled = true;
+    requestAnimationFrame(function(){
+      scheduled = false;
+      var y = window.scrollY || window.pageYOffset;
+      var ids = ['about', 'work', 'visit'];
+      var current = '';
+      for (var i = 0; i < ids.length; i++) {
+        var el = document.getElementById(ids[i]);
+        if (!el) continue;
+        var r = el.getBoundingClientRect();
+        if (r.top <= 140 && r.bottom > 140) { current = ids[i]; break; }
+      }
+      navLinks.forEach(function(a){
+        a.style.color = (a.getAttribute('data-section') === current) ? 'var(--accent)' : 'inherit';
+      });
+      backToTop.style.display = y > 600 ? 'flex' : 'none';
+    });
+  }
+  window.addEventListener('scroll', onScroll, { passive: true });
+  onScroll();
+  backToTop.addEventListener('click', function(){ window.scrollTo({ top: 0, behavior: 'smooth' }); });
+
+  // ---------- Count-up numbers (e.g. "10+") ----------
+  function runCountUp(el){
+    var target = parseInt(el.getAttribute('data-count-to'), 10) || 0;
+    var suffix = el.getAttribute('data-suffix') || '';
+    var start = null;
+    var dur = 1100;
+    function step(ts){
+      if (start === null) start = ts;
+      var p = Math.min(1, (ts - start) / dur);
+      var eased = 1 - Math.pow(1 - p, 3);
+      el.textContent = Math.round(eased * target) + suffix;
+      if (p < 1) requestAnimationFrame(step);
+    }
+    requestAnimationFrame(step);
+  }
+
+  // ---------- Reveal-on-scroll ----------
+  if (typeof IntersectionObserver !== 'undefined') {
+    var io = new IntersectionObserver(function(entries){
+      entries.forEach(function(e){
+        if (!e.isIntersecting) return;
+        e.target.style.opacity = '1';
+        e.target.style.removeProperty('transform');
+        e.target.style.removeProperty('filter');
+        var counters = e.target.querySelectorAll ? e.target.querySelectorAll('[data-count-to]') : [];
+        Array.prototype.forEach.call(counters, runCountUp);
+        io.unobserve(e.target);
+      });
+    }, { rootMargin: '0px 0px -12% 0px', threshold: 0.08 });
+    document.querySelectorAll('[data-reveal]').forEach(function(el, i){
+      var r = el.getBoundingClientRect();
+      var alreadyVisible = r.top < window.innerHeight * 0.88;
+      el.style.transitionDelay = (i % 4) * 70 + 'ms';
+      if (alreadyVisible) {
+        var preCounters = el.querySelectorAll ? el.querySelectorAll('[data-count-to]') : [];
+        Array.prototype.forEach.call(preCounters, runCountUp);
+        return;
+      }
+      el.style.opacity = '0';
+      el.style.transform = 'translateY(26px)';
+      el.style.filter = 'blur(4px)';
+      io.observe(el);
+    });
+  }
+
+  // ---------- Welcome modal ----------
+  var modal = document.getElementById('welcomeModal');
+  var card = document.getElementById('welcomeCard');
+  var modalTimer = setTimeout(function(){ modal.style.display = 'flex'; }, 1400);
+  function closeModal(){ clearTimeout(modalTimer); modal.style.display = 'none'; }
+  modal.addEventListener('click', closeModal);
+  card.addEventListener('click', function(e){ e.stopPropagation(); });
+  document.getElementById('modalClose').addEventListener('click', closeModal);
+  document.getElementById('modalBookBtn').addEventListener('click', closeModal);
+
+})();
+</script>
+
+</body>
+</html>

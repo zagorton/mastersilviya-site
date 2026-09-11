@@ -1,0 +1,369 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Services & Pricing — MasterSilviya Studio, Sherman Oaks CA</title>
+<meta name="description" content="Full service menu for MasterSilviya Studio: cut & style, colour, treatments, makeup & brows. Sherman Oaks, CA.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Alex+Brush&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://use.typekit.net/rih8jwx.css">
+<!-- Structured data: the legitimate, Google-sanctioned way to list real
+     services for search relevance — not visible text, but not hidden-text
+     trickery either. Every item here matches what's actually on this page. -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "HairSalon",
+  "@id": "https://mastersilviya.com/#business",
+  "name": "MasterSilviya Studio",
+  "url": "https://mastersilviya.com/services.html",
+  "telephone": "+18182107688",
+  "priceRange": "$$",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "15125 Ventura Blvd, Ste 8",
+    "addressLocality": "Sherman Oaks",
+    "addressRegion": "CA",
+    "postalCode": "91403",
+    "addressCountry": "US"
+  },
+  "sameAs": ["https://www.instagram.com/mastersilviya_studio"],
+  "hasOfferCatalog": {
+    "@type": "OfferCatalog",
+    "name": "Salon Services",
+    "itemListElement": [
+      {
+        "@type": "OfferCatalog",
+        "name": "Cut & Style",
+        "itemListElement": [
+          { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Women's Haircut" } },
+          { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Men's Haircut" } },
+          { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Blow-dry Style" } },
+          { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Bang Trim" } },
+          { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Updo" } },
+          { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Braids" } }
+        ]
+      },
+      {
+        "@type": "OfferCatalog",
+        "name": "Colour",
+        "itemListElement": [
+          { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Single Process (Full Root Touch-Up)" } },
+          { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "All-over Color" } },
+          { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Toner / Gloss" } },
+          { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Balayage & Highlights" } },
+          { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "AirTouch" } },
+          { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Color Transformation" } }
+        ]
+      },
+      {
+        "@type": "OfferCatalog",
+        "name": "Treatments & Texture",
+        "itemListElement": [
+          { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Kérastase Fusio Dose Treatment" } },
+          { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Perm" } },
+          { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "K-tip Extensions" } }
+        ]
+      },
+      {
+        "@type": "OfferCatalog",
+        "name": "Makeup & Brows",
+        "itemListElement": [
+          { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Makeup" } },
+          { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Brow Shaping & Tinting" } },
+          { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Eyebrow Lamination" } }
+        ]
+      }
+    ]
+  }
+}
+</script>
+<style>
+  *{box-sizing:border-box}
+  html{scroll-behavior:smooth}
+  html,body{overflow-x:hidden}
+  body{margin:0;background:#fdf6f1;color:#3f2a24;font-family:'Poppins',system-ui,sans-serif;-webkit-font-smoothing:antialiased;text-wrap:pretty}
+  a{color:#3f2a24;text-decoration:none}
+  a:hover{color:#c1694c}
+  @keyframes fadeIn{from{opacity:0}to{opacity:1}}
+  @keyframes popIn{from{opacity:0;transform:translateY(16px) scale(.97)}to{opacity:1;transform:none}}
+  @keyframes windSweep{0%{transform:translateX(-120%) skewX(-12deg)}100%{transform:translateX(220%) skewX(-12deg)}}
+  @keyframes windLift{0%{transform:translateY(0) rotate(0)}35%{transform:translateY(-4px) rotate(-.4deg)}70%{transform:translateY(-2px) rotate(.3deg)}100%{transform:translateY(-3px) rotate(0)}}
+  .windBtn{position:relative;overflow:hidden;isolation:isolate;transition:background .5s ease,color .5s ease,letter-spacing .6s cubic-bezier(.2,.8,.25,1),box-shadow .5s ease}
+  .windBtn>span{position:relative;z-index:2}
+  .windBtn::before{content:'';position:absolute;top:-20%;left:0;width:45%;height:140%;z-index:1;pointer-events:none;background:linear-gradient(100deg,transparent,rgba(255,253,249,.7),transparent);opacity:0}
+  .windBtn:hover{animation:windLift .9s cubic-bezier(.2,.8,.25,1) forwards;letter-spacing:.15em;box-shadow:0 16px 40px rgba(193,105,76,.32)}
+  .windBtn:hover::before{opacity:1;animation:windSweep 1.15s cubic-bezier(.35,.1,.2,1) infinite}
+  .windBtn.dark:hover{background:var(--accent);color:#fffdf9}
+  .u{position:relative}
+  .u::after{content:'';position:absolute;left:0;bottom:-3px;width:0;height:1px;background:currentColor;transition:width .35s ease}
+  .u:hover::after{width:100%}
+  .nav-toggle{display:none;align-items:center;justify-content:center;width:40px;height:40px;margin-left:auto;border:none;background:transparent;cursor:pointer;color:var(--ink);padding:0}
+  .mobile-menu{display:none;position:fixed;top:var(--headerH,82px);left:0;right:0;bottom:0;z-index:55;background:var(--paper);flex-direction:column;justify-content:center;align-items:stretch;gap:6px;overflow-y:auto}
+  :root,#app{--headerH:82px}
+  @media (max-width:760px){
+    .nav-links,.nav-book{display:none !important}
+    .nav-toggle{display:inline-flex;margin-left:auto}
+    #siteHeader nav{padding-top:18px !important;padding-bottom:18px !important}
+    #siteHeader .brand span:first-child{font-size:28px !important}
+    :root,#app{--headerH:92px}
+  }
+  @media (min-width:761px){
+    .mobile-menu{display:none !important}
+  }
+  [data-reveal]{transition:opacity .9s cubic-bezier(.2,.8,.25,1), transform .9s cubic-bezier(.2,.8,.25,1), filter .9s ease}
+  .icon-x,.icon-menu{display:none}
+  .nav-open .icon-x{display:block}
+  .nav-open .icon-menu{display:none}
+  .icon-menu{display:block}
+  .svc-row{display:flex;align-items:baseline;justify-content:space-between;gap:16px;padding:16px 0;border-bottom:1px solid rgba(63,42,36,.08)}
+  #cut-style,#colour,#treatments,#makeup{scroll-margin-top:104px}
+  .svc-pill{display:inline-block;padding:11px 22px;border-radius:999px;border:1px solid rgba(63,42,36,.2);font-weight:500;font-size:13px;letter-spacing:.03em;color:var(--ink);background:transparent;transition:background .3s ease,color .3s ease,border-color .3s ease,transform .3s ease,box-shadow .3s ease}
+  .svc-pill:hover{border-color:var(--accent);color:var(--accent);transform:translateY(-2px)}
+  .svc-pill.active{background:var(--ink);color:var(--paper);border-color:var(--ink);box-shadow:0 10px 26px rgba(63,42,36,.22)}
+  .svc-card{transition:transform .4s cubic-bezier(.2,.8,.25,1),box-shadow .4s ease}
+  .svc-card:hover{transform:translateY(-6px);box-shadow:0 26px 60px rgba(63,42,36,.16)}
+  .zoomable{overflow:hidden}
+  .zoomable img{transition:transform 1.1s cubic-bezier(.2,.8,.2,1)}
+  .zoomable:hover img{transform:scale(1.06)}
+</style>
+</head>
+<body>
+
+<div id="app" style="--ink:#3f2a24;--paper:#fdf6f1;--sand:#f2e1d6;--accent:#c1694c;background:var(--paper)">
+
+  <!-- ============ NAV ============ -->
+  <header id="siteHeader" style="position:fixed;top:0;left:0;right:0;z-index:60;background:rgba(244,242,237,.92);backdrop-filter:blur(14px);border-bottom:1px solid rgba(63,42,36,.09)">
+    <nav style="display:flex;align-items:center;gap:24px;padding:16px clamp(20px,3vw,40px) 16px clamp(18px,2vw,28px)">
+      <a href="index.html" class="brand" style="display:flex;flex-direction:column;align-items:flex-end;gap:3px;line-height:1">
+        <span style="font-family:'linotype-didot',serif;font-size:29px;letter-spacing:.03em;text-transform:uppercase;color:var(--ink)">MasterSilviya</span>
+        <span style="font-family:'Poppins',sans-serif;font-weight:400;font-size:10px;letter-spacing:.28em;text-transform:uppercase;color:rgba(63,42,36,.42)">Studio</span>
+      </a>
+      <div class="nav-links" style="margin-left:auto;display:flex;gap:8px;font-weight:500;font-size:14.5px;letter-spacing:.02em;color:rgba(63,42,36,.7)">
+        <a class="u" href="index.html" style="padding:10px 14px">Home</a>
+        <a class="u" href="services.html" style="padding:10px 14px;color:var(--accent)">Services</a>
+        <a class="u" href="index.html#work" style="padding:10px 14px">Work</a>
+        <a class="u" href="index.html#about" style="padding:10px 14px">About</a>
+        <a class="u" href="index.html#visit" style="padding:10px 14px">Visit</a>
+      </div>
+      <button id="navToggle" class="nav-toggle" aria-label="Menu">
+        <svg class="icon-x" width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg"><line x1="4" y1="4" x2="18" y2="18" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"></line><line x1="18" y1="4" x2="4" y2="18" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"></line></svg>
+        <svg class="icon-menu" width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg"><line x1="3" y1="6" x2="19" y2="6" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"></line><line x1="3" y1="11" x2="19" y2="11" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"></line><line x1="3" y1="16" x2="19" y2="16" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"></line></svg>
+      </button>
+    </nav>
+  </header>
+  <div id="mobileMenu" class="mobile-menu" style="padding:6vh clamp(28px,8vw,48px) 6vh">
+    <a class="u mobile-link" href="index.html" style="padding:15px 2px;font-weight:400;font-size:25px">Home</a>
+    <a class="u mobile-link" href="services.html" style="padding:15px 2px;font-weight:400;font-size:25px;color:var(--accent)">Services</a>
+    <a class="u mobile-link" href="index.html#work" style="padding:15px 2px;font-weight:400;font-size:25px">Work</a>
+    <a class="u mobile-link" href="index.html#about" style="padding:15px 2px;font-weight:400;font-size:25px">About</a>
+    <a class="u mobile-link" href="index.html#visit" style="padding:15px 2px;font-weight:400;font-size:25px">Visit</a>
+  </div>
+  <div aria-hidden="true" style="height:var(--headerH,82px)"></div>
+
+  <!-- ============ PAGE INTRO ============ -->
+  <!-- Split layout (text + photo), matching the About section on the homepage —
+       gives the services page a face and a room instead of reading as a bare
+       price list. Only one Book button on this page now (the closing CTA at
+       the bottom) — this intro no longer duplicates it. -->
+  <section data-reveal="1" style="max-width:1280px;margin:0 auto;padding:88px 30px 20px">
+    <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:56px;align-items:center">
+      <div>
+        <span style="font-weight:500;font-size:11.5px;letter-spacing:.22em;text-transform:uppercase;color:var(--accent)">Sherman Oaks, CA</span>
+        <h1 style="font-family:'linotype-didot',serif;font-weight:400;font-size:clamp(40px,5.6vw,72px);line-height:1;letter-spacing:-.02em;margin:16px 0 0">Services &amp; <span style="font-family:'Alex Brush',cursive;font-weight:400;color:var(--accent);font-size:1.3em">timing</span></h1>
+        <p style="font-weight:300;font-size:17px;line-height:1.7;color:rgba(63,42,36,.72);margin:22px 0 0;max-width:460px">Every visit starts with a consultation, so pricing is quoted for your hair once we've talked it through — the times below give you a sense of how long to set aside.</p>
+      </div>
+      <div class="zoomable" style="position:relative;aspect-ratio:3/2;border-radius:8px;overflow:hidden;box-shadow:0 26px 60px rgba(63,42,36,.18)"><img src="service-wash.jpg" alt="Relaxing shampoo wash at MasterSilviya Studio" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:50% 50%;display:block"></div>
+    </div>
+  </section>
+
+  <!-- ============ CATEGORY QUICK-NAV ============ -->
+  <!-- Jump-to-category pills, like a "choose a category" menu — but ours
+       smooth-scrolls to a real anchor and lights up as you scroll (scroll-spy),
+       instead of swapping the whole page. No pricing tiers (Junior/Senior/
+       Master) — Silviya is a single private-studio stylist, so that structure
+       doesn't apply; pricing here is still "ask at consultation" by design. -->
+  <nav aria-label="Service categories" style="max-width:920px;margin:32px auto 0;padding:0 30px;display:flex;flex-wrap:wrap;gap:10px;justify-content:center">
+    <a href="#cut-style" class="svc-pill" data-target="cut-style">Cut &amp; Style</a>
+    <a href="#colour" class="svc-pill" data-target="colour">Colour</a>
+    <a href="#treatments" class="svc-pill" data-target="treatments">Treatments</a>
+    <a href="#makeup" class="svc-pill" data-target="makeup">Makeup &amp; Brows</a>
+  </nav>
+
+  <!-- ============ SERVICE GROUPS ============ -->
+  <!-- Each category is now its own bordered card floating on a sand-tinted
+       band (the same "cards on colour" language as the testimonials block
+       on the homepage), with a small line-icon standing in for the plain
+       "01/02/03/04" numbering — less price list, more designed. -->
+  <section style="background:var(--sand);margin-top:60px">
+    <div style="max-width:920px;margin:0 auto;padding:64px 30px 84px;display:flex;flex-direction:column;gap:26px">
+
+      <div id="cut-style" class="svc-card" data-reveal="1" style="background:var(--paper);border-radius:10px;padding:clamp(28px,4vw,42px) clamp(24px,4vw,38px);box-shadow:0 14px 40px rgba(63,42,36,.08)">
+        <div style="display:flex;align-items:center;gap:14px;padding-bottom:18px;border-bottom:1px solid rgba(63,42,36,.14);margin-bottom:6px">
+          <span style="flex:none;width:44px;height:44px;border-radius:50%;background:rgba(193,105,76,.12);display:flex;align-items:center;justify-content:center;color:var(--accent)"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="6" cy="6" r="2.3" stroke="currentColor" stroke-width="1.5"></circle><circle cx="6" cy="18" r="2.3" stroke="currentColor" stroke-width="1.5"></circle><line x1="7.8" y1="7.6" x2="20" y2="17.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"></line><line x1="7.8" y1="16.4" x2="20" y2="6.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"></line></svg></span>
+          <h2 style="font-family:'linotype-didot',serif;font-weight:400;font-size:clamp(24px,2.8vw,32px);line-height:1;letter-spacing:-.01em;margin:0">Cut &amp; Style</h2>
+        </div>
+        <div class="svc-row"><span style="font-weight:400;font-size:15.5px;color:rgba(63,42,36,.86)">Women's Haircut<span style="display:block;font-weight:300;font-size:13px;color:rgba(63,42,36,.55);margin-top:3px">Wash and style included</span></span><span style="font-weight:400;font-size:11.5px;letter-spacing:.1em;text-transform:uppercase;white-space:nowrap;color:rgba(63,42,36,.5)">55 min</span></div>
+        <div class="svc-row"><span style="font-weight:400;font-size:15.5px;color:rgba(63,42,36,.86)">Men's Haircut<span style="display:block;font-weight:300;font-size:13px;color:rgba(63,42,36,.55);margin-top:3px">Washing and massage included</span></span><span style="font-weight:400;font-size:11.5px;letter-spacing:.1em;text-transform:uppercase;white-space:nowrap;color:rgba(63,42,36,.5)">30 min</span></div>
+        <div class="svc-row"><span style="font-weight:400;font-size:15.5px;color:rgba(63,42,36,.86)">Blow-dry Style</span><span style="font-weight:400;font-size:11.5px;letter-spacing:.1em;text-transform:uppercase;white-space:nowrap;color:rgba(63,42,36,.5)">1 hr 30 min</span></div>
+        <div class="svc-row"><span style="font-weight:400;font-size:15.5px;color:rgba(63,42,36,.86)">Bang Trim</span><span style="font-weight:400;font-size:11.5px;letter-spacing:.1em;text-transform:uppercase;white-space:nowrap;color:rgba(63,42,36,.5)">30 min</span></div>
+        <div class="svc-row"><span style="font-weight:400;font-size:15.5px;color:rgba(63,42,36,.86)">Updo</span><span style="font-weight:400;font-size:11.5px;letter-spacing:.1em;text-transform:uppercase;white-space:nowrap;color:rgba(63,42,36,.5)">45 min</span></div>
+        <div class="svc-row" style="border-bottom:none"><span style="font-weight:400;font-size:15.5px;color:rgba(63,42,36,.86)">Braids (per braid)</span><span style="font-weight:400;font-size:11.5px;letter-spacing:.1em;text-transform:uppercase;white-space:nowrap;color:rgba(63,42,36,.5)">15 min</span></div>
+      </div>
+
+      <div id="colour" class="svc-card" data-reveal="1" style="background:var(--paper);border-radius:10px;padding:clamp(28px,4vw,42px) clamp(24px,4vw,38px);box-shadow:0 14px 40px rgba(63,42,36,.08)">
+        <div style="display:flex;align-items:center;gap:14px;padding-bottom:18px;border-bottom:1px solid rgba(63,42,36,.14);margin-bottom:6px">
+          <span style="flex:none;width:44px;height:44px;border-radius:50%;background:rgba(193,105,76,.12);display:flex;align-items:center;justify-content:center;color:var(--accent)"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M12 3C12 3 6 10.5 6 14.5A6 6 0 0 0 18 14.5C18 10.5 12 3 12 3Z" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"></path></svg></span>
+          <h2 style="font-family:'linotype-didot',serif;font-weight:400;font-size:clamp(24px,2.8vw,32px);line-height:1;letter-spacing:-.01em;margin:0">Colour</h2>
+        </div>
+        <div class="svc-row"><span style="font-weight:400;font-size:15.5px;color:rgba(63,42,36,.86)">Single Process (Full Root Touch-Up)</span><span style="font-weight:400;font-size:11.5px;letter-spacing:.1em;text-transform:uppercase;white-space:nowrap;color:rgba(63,42,36,.5)">1 hr 30 min</span></div>
+        <div class="svc-row"><span style="font-weight:400;font-size:15.5px;color:rgba(63,42,36,.86)">All-over Color</span><span style="font-weight:400;font-size:11.5px;letter-spacing:.1em;text-transform:uppercase;white-space:nowrap;color:rgba(63,42,36,.5)">2 hr 30 min</span></div>
+        <div class="svc-row"><span style="font-weight:400;font-size:15.5px;color:rgba(63,42,36,.86)">Toner/Gloss</span><span style="font-weight:400;font-size:11.5px;letter-spacing:.1em;text-transform:uppercase;white-space:nowrap;color:rgba(63,42,36,.5)">1 hr</span></div>
+        <div class="svc-row"><span style="font-weight:400;font-size:15.5px;color:rgba(63,42,36,.86)">Partial Highlights</span><span style="font-weight:400;font-size:11.5px;letter-spacing:.1em;text-transform:uppercase;white-space:nowrap;color:rgba(63,42,36,.5)">2 hr 30 min</span></div>
+        <div class="svc-row"><span style="font-weight:400;font-size:15.5px;color:rgba(63,42,36,.86)">Full Highlights</span><span style="font-weight:400;font-size:11.5px;letter-spacing:.1em;text-transform:uppercase;white-space:nowrap;color:rgba(63,42,36,.5)">3 hr 30 min</span></div>
+        <div class="svc-row"><span style="font-weight:400;font-size:15.5px;color:rgba(63,42,36,.86)">AirTouch</span><span style="font-weight:400;font-size:11.5px;letter-spacing:.1em;text-transform:uppercase;white-space:nowrap;color:rgba(63,42,36,.5)">6 hr 30 min</span></div>
+        <div class="svc-row" style="border-bottom:none"><span style="font-weight:400;font-size:15.5px;color:rgba(63,42,36,.86)">Color Transformation<span style="display:block;font-weight:300;font-size:13px;color:rgba(63,42,36,.55);margin-top:3px">per hour</span></span><span style="font-weight:400;font-size:11.5px;letter-spacing:.1em;text-transform:uppercase;white-space:nowrap;color:rgba(63,42,36,.5)">1 hr</span></div>
+      </div>
+
+      <div id="treatments" class="svc-card" data-reveal="1" style="background:var(--paper);border-radius:10px;padding:clamp(28px,4vw,42px) clamp(24px,4vw,38px);box-shadow:0 14px 40px rgba(63,42,36,.08)">
+        <div style="display:flex;align-items:center;gap:14px;padding-bottom:18px;border-bottom:1px solid rgba(63,42,36,.14);margin-bottom:6px">
+          <span style="flex:none;width:44px;height:44px;border-radius:50%;background:rgba(193,105,76,.12);display:flex;align-items:center;justify-content:center;color:var(--accent)"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M12 2.5L14 8.5L20 10.5L14 12.5L12 18.5L10 12.5L4 10.5L10 8.5L12 2.5Z" stroke="currentColor" stroke-width="1.4" stroke-linejoin="round"></path></svg></span>
+          <h2 style="font-family:'linotype-didot',serif;font-weight:400;font-size:clamp(24px,2.8vw,32px);line-height:1;letter-spacing:-.01em;margin:0">Treatments &amp; Texture</h2>
+        </div>
+        <div class="svc-row"><span style="font-weight:400;font-size:15.5px;color:rgba(63,42,36,.86)">Kérastase Fusio Dose Treatment</span><span style="font-weight:400;font-size:11.5px;letter-spacing:.1em;text-transform:uppercase;white-space:nowrap;color:rgba(63,42,36,.5)">30 min</span></div>
+        <div class="svc-row"><span style="font-weight:400;font-size:15.5px;color:rgba(63,42,36,.86)">Perm</span><span style="font-weight:400;font-size:11.5px;letter-spacing:.1em;text-transform:uppercase;white-space:nowrap;color:rgba(63,42,36,.5)">1 hr 15 min</span></div>
+        <div class="svc-row" style="border-bottom:none"><span style="font-weight:400;font-size:15.5px;color:rgba(63,42,36,.86)">K-tip Extensions</span><span style="font-weight:400;font-size:11.5px;letter-spacing:.1em;text-transform:uppercase;white-space:nowrap;color:rgba(63,42,36,.5)">30 min</span></div>
+      </div>
+
+      <div id="makeup" class="svc-card" data-reveal="1" style="background:var(--paper);border-radius:10px;padding:clamp(28px,4vw,42px) clamp(24px,4vw,38px);box-shadow:0 14px 40px rgba(63,42,36,.08)">
+        <div style="display:flex;align-items:center;gap:14px;padding-bottom:18px;border-bottom:1px solid rgba(63,42,36,.14);margin-bottom:6px">
+          <span style="flex:none;width:44px;height:44px;border-radius:50%;background:rgba(193,105,76,.12);display:flex;align-items:center;justify-content:center;color:var(--accent)"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M12 20.5S3.5 15 3.5 9.2C3.5 6 6 4 8.5 4C10.2 4 11.4 5 12 6.2C12.6 5 13.8 4 15.5 4C18 4 20.5 6 20.5 9.2C20.5 15 12 20.5 12 20.5Z" stroke="currentColor" stroke-width="1.4" stroke-linejoin="round"></path></svg></span>
+          <h2 style="font-family:'linotype-didot',serif;font-weight:400;font-size:clamp(24px,2.8vw,32px);line-height:1;letter-spacing:-.01em;margin:0">Makeup &amp; Brows</h2>
+        </div>
+        <div class="svc-row"><span style="font-weight:400;font-size:15.5px;color:rgba(63,42,36,.86)">Makeup</span><span style="font-weight:400;font-size:11.5px;letter-spacing:.1em;text-transform:uppercase;white-space:nowrap;color:rgba(63,42,36,.5)">1 hr</span></div>
+        <div class="svc-row"><span style="font-weight:400;font-size:15.5px;color:rgba(63,42,36,.86)">Brows (shaping &amp; tinting)</span><span style="font-weight:400;font-size:11.5px;letter-spacing:.1em;text-transform:uppercase;white-space:nowrap;color:rgba(63,42,36,.5)">30 min</span></div>
+        <div class="svc-row" style="border-bottom:none"><span style="font-weight:400;font-size:15.5px;color:rgba(63,42,36,.86)">Eyebrow Lamination</span><span style="font-weight:400;font-size:11.5px;letter-spacing:.1em;text-transform:uppercase;white-space:nowrap;color:rgba(63,42,36,.5)">1 hr 30 min</span></div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ============ FOOTER ============ -->
+  <footer style="border-top:1px solid rgba(63,42,36,.14);background:var(--sand)">
+    <div style="max-width:1280px;margin:0 auto;padding:64px 30px 40px;display:flex;flex-wrap:wrap;gap:56px clamp(64px,10vw,140px)">
+      <div style="display:flex;flex-direction:column;gap:20px;min-width:230px">
+        <a href="index.html" style="display:flex;flex-direction:column;align-items:flex-start;gap:3px;line-height:1">
+          <span style="font-family:'linotype-didot',serif;font-size:26px;letter-spacing:.02em;text-transform:uppercase;color:var(--ink)">MasterSilviya</span>
+          <span style="align-self:flex-end;font-family:'Poppins',sans-serif;font-weight:400;font-size:9px;letter-spacing:.26em;text-transform:uppercase;color:rgba(63,42,36,.42)">Studio</span>
+        </a>
+        <div style="display:flex;flex-direction:column;gap:9px">
+          <span style="font-weight:300;font-size:13.5px;line-height:1.7;color:rgba(63,42,36,.6)">15125 Ventura Blvd Ste 8<br>Sherman Oaks, CA 91403</span>
+          <a class="u" href="tel:+18182107688" style="font-weight:500;font-size:14px;color:var(--ink)">(818) 210-7688</a>
+        </div>
+        <a href="https://www.instagram.com/mastersilviya_studio" target="_blank" rel="noopener" aria-label="Instagram" style="display:inline-flex;align-items:center;justify-content:center;width:34px;height:34px;border-radius:50%;border:1px solid rgba(63,42,36,.2);color:var(--ink)">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><rect x="3" y="3" width="18" height="18" rx="5" stroke="currentColor" stroke-width="1.5"></rect><circle cx="12" cy="12" r="4" stroke="currentColor" stroke-width="1.5"></circle><circle cx="17.2" cy="6.8" r="1.1" fill="currentColor"></circle></svg>
+        </a>
+      </div>
+      <div style="display:flex;flex-direction:column;gap:15px">
+        <span style="font-weight:400;font-size:11px;letter-spacing:.18em;text-transform:uppercase;color:rgba(63,42,36,.5)">Explore</span>
+        <a class="u" href="services.html" style="font-weight:400;font-size:15px;color:var(--accent)">Services</a>
+        <a class="u" href="index.html#work" style="font-weight:400;font-size:15px;color:rgba(63,42,36,.75)">Work</a>
+        <a class="u" href="index.html#about" style="font-weight:400;font-size:15px;color:rgba(63,42,36,.75)">About</a>
+        <a class="u" href="index.html#visit" style="font-weight:400;font-size:15px;color:rgba(63,42,36,.75)">Visit</a>
+      </div>
+      <div style="display:flex;flex-direction:column;gap:16px;align-items:flex-start;min-width:230px">
+        <span style="font-weight:400;font-size:11px;letter-spacing:.18em;text-transform:uppercase;color:rgba(63,42,36,.5)">Ready?</span>
+        <h3 style="font-family:'linotype-didot',serif;font-weight:400;font-size:clamp(26px,3vw,34px);line-height:1.05;letter-spacing:-.01em;margin:0;color:var(--ink)">Let's book <span style="font-family:'Alex Brush',cursive;font-weight:400;color:var(--accent);font-size:1.25em">you</span> in.</h3>
+        <a href="https://book.squareup.com/appointments/ffppp3qn5zbpjs/location/LCDY8K92TGENF/services" target="_blank" rel="noopener" class="windBtn dark" style="display:inline-block;font-weight:600;font-size:12.5px;letter-spacing:.06em;text-transform:uppercase;background:var(--ink);color:var(--paper);padding:15px 28px;border-radius:2px"><span>Book an appointment</span></a>
+      </div>
+    </div>
+    <div style="border-top:1px solid rgba(63,42,36,.12)">
+      <div style="max-width:1280px;margin:0 auto;padding:18px 30px;display:flex;flex-direction:column;gap:6px">
+        <div style="font-weight:300;font-size:12px;color:rgba(63,42,36,.5)">© 2026 MasterSilviya Studio</div>
+        <div style="font-weight:300;font-size:11.5px;line-height:1.6;color:rgba(63,42,36,.4);max-width:760px">Haircuts, colour &amp; balayage, highlights, blowouts, Kérastase treatments, perms, K-tip extensions, bridal hair and makeup — serving Sherman Oaks, Studio City, Encino and the greater San Fernando Valley.</div>
+      </div>
+    </div>
+  </footer>
+
+</div>
+
+<script>
+(function(){
+  "use strict";
+
+  // ---------- Nav: mobile toggle ----------
+  var navToggle = document.getElementById('navToggle');
+  var mobileMenu = document.getElementById('mobileMenu');
+  var appEl = document.getElementById('app');
+  function closeNav(){
+    appEl.classList.remove('nav-open');
+    mobileMenu.style.display = 'none';
+    document.body.style.overflow = '';
+  }
+  navToggle.addEventListener('click', function(){
+    var isOpen = appEl.classList.toggle('nav-open');
+    mobileMenu.style.display = isOpen ? 'flex' : 'none';
+    document.body.style.overflow = isOpen ? 'hidden' : '';
+  });
+  Array.prototype.forEach.call(document.querySelectorAll('.mobile-link'), function(el){
+    el.addEventListener('click', closeNav);
+  });
+
+  // ---------- Reveal-on-scroll ----------
+  if (typeof IntersectionObserver !== 'undefined') {
+    var io = new IntersectionObserver(function(entries){
+      entries.forEach(function(e){
+        if (!e.isIntersecting) return;
+        e.target.style.opacity = '1';
+        e.target.style.removeProperty('transform');
+        e.target.style.removeProperty('filter');
+        io.unobserve(e.target);
+      });
+    }, { rootMargin: '0px 0px -12% 0px', threshold: 0.08 });
+    document.querySelectorAll('[data-reveal]').forEach(function(el, i){
+      var r = el.getBoundingClientRect();
+      var alreadyVisible = r.top < window.innerHeight * 0.88;
+      el.style.transitionDelay = (i % 4) * 70 + 'ms';
+      if (alreadyVisible) return;
+      el.style.opacity = '0';
+      el.style.transform = 'translateY(26px)';
+      el.style.filter = 'blur(4px)';
+      io.observe(el);
+    });
+  }
+
+  // ---------- Category quick-nav: scroll-spy (mirrors the nav-link
+  // highlighting on the homepage) so the active pill tracks whichever
+  // card is currently in view as you scroll or after a pill click. ----------
+  var svcPills = document.querySelectorAll('.svc-pill');
+  var svcIds = ['cut-style', 'colour', 'treatments', 'makeup'];
+  var svcSections = svcIds.map(function(id){ return document.getElementById(id); });
+  var svcScheduled = false;
+  function updateSvcNav(){
+    if (svcScheduled) return;
+    svcScheduled = true;
+    requestAnimationFrame(function(){
+      svcScheduled = false;
+      var current = svcSections[0] ? svcSections[0].id : null;
+      for (var i = 0; i < svcSections.length; i++) {
+        var el = svcSections[i];
+        if (!el) continue;
+        if (el.getBoundingClientRect().top <= 160) current = el.id;
+      }
+      svcPills.forEach(function(p){
+        p.classList.toggle('active', p.getAttribute('data-target') === current);
+      });
+    });
+  }
+  if (svcPills.length && svcSections[0]) {
+    window.addEventListener('scroll', updateSvcNav, { passive: true });
+    updateSvcNav();
+  }
+
+})();
+</script>
+
+</body>
+</html>
